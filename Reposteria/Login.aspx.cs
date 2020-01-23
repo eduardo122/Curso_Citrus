@@ -26,6 +26,7 @@ namespace Reposteria
                 if (q.listaEmpleados.Usuario == usuario && q.listaEmpleados.Contraseña == password) {
 
                     Response.Write("<script> alert('Correcto') </script>");
+                    Response.Redirect("Clientes.aspx");
                 }
                 else{
                     Response.Write("<script> alert('Datos Incorrectos') </script>");
