@@ -29,6 +29,12 @@
             </div>
 
             <ul class="list-unstyled components">
+                 <li>
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                       Inicio
+                    </a>
+                </li>
                 <li class="active">
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
                         <i class="fas fa-users"></i>

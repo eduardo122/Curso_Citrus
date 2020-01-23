@@ -5,12 +5,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-6  d-flex  justify-content-lg-start">
                 <asp:Button ID="botonAgregarCliente" CssClass="btn btn-danger" runat="server" Text="Agregar un nuevo cliente" />
             </div>
-            <div class="col-6">
+            <div class="col-6  d-flex justify-content-end">
                 <div class="form-inline">
-                    <asp:TextBox runat="server" ID="entradaBusqueda"  CssClass="form-control d-inline" placeholder="Ingrese el nombre del cliente"></asp:TextBox>
+                    <asp:TextBox runat="server" ID="entradaBusqueda"  CssClass="form-control d-inline" placeholder="Ingrese datos del cliente"></asp:TextBox>
                 <asp:Button ID="botonBuscar" runat="server" Text="Buscar" OnClick="botonBuscar_Click" CssClass="btn btn-success ml-3" />
                 </div>
                 
@@ -19,11 +19,10 @@
         </div>
     </div>
         <div id="content" >
-            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="DatasourceDePrueba" CssClass="table table-bordered table-sm">
+            <asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="DatasourceDePrueba" CssClass="table table-bordered table-sm table-warning">
                 <Columns>
                     
                     <asp:BoundField DataField="ID" HeaderText="ID" InsertVisible="False" ReadOnly="True" SortExpression="ID" />
-                    
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" SortExpression="Nombre" />
                     <asp:BoundField DataField="Apellido" HeaderText="Apellido" SortExpression="Apellido" />
                     <asp:BoundField DataField="telefono" HeaderText="telefono" SortExpression="telefono" />
