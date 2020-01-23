@@ -1,4 +1,4 @@
-﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\Owner\source\repos\Reposteria\Reposteria\Model1.edmx'. 
+﻿// La generación de código T4 está habilitada para el modelo 'C:\Users\manue\Source\Repos\eduardo122\Curso_Citrus\Reposteria\Model1.edmx'. 
 // Para habilitar la generación de código heredada, cambie el valor de la propiedad del diseñador 'Estrategia de generación de código'
 // por 'ObjectContext heredado'. Esta propiedad está disponible en la ventana Propiedades cuando se abre
 // el modelo en el diseñador.

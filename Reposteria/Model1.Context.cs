@@ -13,10 +13,10 @@ namespace Reposteria
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class Reposteria_WebEntities : DbContext
+    public partial class Reposteria_WebEntities1 : DbContext
     {
-        public Reposteria_WebEntities()
-            : base("name=Reposteria_WebEntities")
+        public Reposteria_WebEntities1()
+            : base("name=Reposteria_WebEntities1")
         {
         }
     

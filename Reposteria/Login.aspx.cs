@@ -14,7 +14,7 @@ namespace Reposteria
         }
         protected void loginBTN_Click(object sender, EventArgs e)
         {
-            Reposteria_WebEntities entidad = new Reposteria_WebEntities();
+            Reposteria_WebEntities1 entidad = new Reposteria_WebEntities1();
             List<Empleado> empleados = entidad.Empleados.ToList();
             string usuario = Usuario.Text;
             string password = Password.Text;
@@ -24,9 +24,7 @@ namespace Reposteria
                         
             foreach(var q in query) {
                 if (q.listaEmpleados.Usuario == usuario && q.listaEmpleados.Contraseña == password) {
-
-                    Response.Write("<script> alert('Correcto') </script>");
-                    Response.Redirect("Clientes.aspx");
+                    Response.Redirect("Empleados.aspx");
                 }
                 else{
                     Response.Write("<script> alert('Datos Incorrectos') </script>");
